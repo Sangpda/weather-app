@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/JS/moment.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Weather-App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search-bar">
+                <label for="search-bar_input" class="search-bar_icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input type="text" name="search-bar_input" id="search-bar_input" placeholder="Nhập tên thành phố">
+                <div class="microphone ">
+                    <span class="microphone-icon"><i class="fa-solid fa-microphone"></i></span>
+                    <span class="recoding-icon"></span>
+                </div>
+            </div>
+            <div class="info-location">
+                <p class="info-location_city-name">Hà Tĩnh</p>
+                <p class="info-location_weather-state">mây rải rác</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="info-location_weather-icon">
+                <div><span class="info-location_city-temperature">21<sup>o</sup>C</span></div>
+                <div>Nhiệt độ cảm nhận <span class="info-location_city-temp_feellike">22°C</span></div>
+            </div>
+        </div>
+        <div class="add-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">Mặt trời mọc</div>
+                    <div class="value sunrise">6:20</div>
+                </div>
+                <div class="item">
+                    <div class="label">Mặt trời lặn</div>
+                    <div class="value sunset">17:20</div>
+                </div>
+                <div class="item">
+                    <div class="label">Nhiệt độ thấp nhất</div>
+                    <div class="value"><span class="temp_min">19°C</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Độ ẩm</div>
+                    <div class="value humidity">65%</div>
+                </div>
+                <div class="item">
+                    <div class="label">Gió (km/h)</div>
+                    <div class="value windspeed">5</div>
+                </div>
+                <div class="item">
+                    <div class="label">Nhiệt độ cao nhất</div>
+                    <div class="value"><span class="temp_max">27°C</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/JS/index.js"></script>
+</body>
+</html>

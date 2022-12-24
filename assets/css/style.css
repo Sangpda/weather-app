@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    color: white;
+    background: linear-gradient(145deg, #2193b0, #6dd5ed);
+    width: 450px;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.main-section {
+
+}
+.search-bar {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.search-bar_icon {
+    margin-right: 8px;
+    /* position: absolute;
+    left: 0; */
+}
+#search-bar_input {
+    border: 0;
+    outline: 0;
+    padding: 4px 4px 4px 0px;
+    background: transparent;
+    height: 20px;
+    color: white;
+    flex: 1;
+}
+#search-bar_input::placeholder {
+    color: rgb(206,206,206);
+}
+
+.microphone {
+
+}
+.microphone-icon {
+    cursor: pointer;
+}
+.recoding-icon {
+    display: none;
+    height: 10px;
+    width: 10px;
+    background-color: #570707;
+    animation: light 2.5s 0.3s infinite linear;
+    border-radius: 50%;
+}
+@keyframes light {
+    0% {
+        color: #8c0808;
+        box-shadow: 0px 0px 2px #8c0808;
+    }
+    50% {
+        color:#cf2a2a;
+        box-shadow: 0px 0px 2px 5px #cf2a2a;
+    }
+    100% {
+        color: #8c0808;
+        box-shadow: 0px 0px 2px #8c0808;
+    }
+}
+.microphone.recoding .recoding-icon {
+    display: block;
+}
+.microphone.recoding .microphone-icon {
+    display: none;
+}
+.microphone::after {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    color: #b0212f;
+}
+
+.info-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 80px 50px;
+}
+
+.info-location_city-name {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+.info-location_weather-state {
+    font-size: 14px;
+}
+
+.info-location_weather-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.info-location_city-temperature {
+    font-size: 80px;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
+}
+.info-location_city-temp_feellike {
+    font-size: 14px;
+}
+
+/* .info-location_city-temperature::after {
+    content: 'o';
+    position: absolute;
+    font-size: 30px;
+} */
+
+.add-section {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.add-section .row {
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.add-section .item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.add-section .item .label {
+    font-weight: bold;
+}
+/* .add-section .item .value {
+    text-align: center;
+} */
